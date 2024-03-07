@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-2</title>
+    <link rel="stylesheet" href="./admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body onload="ddata(),deskcontent()">
+    <div id="navbarmanu">
+        <div id="baricon">
+            <div id="baricon_open" onclick="admanuclose()"><i class="fa-solid fa-bars"></i></div>
+            <div id="baricon_close" onclick="admanuopen()"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div id="headernav-rightside">
+            <div id="page_title">Deskboard</div>
+            <div id="loger-box">
+                <div><img id="profile_image1" src="./profile.jpeg" alt="">
+                <div id="login_userdetail"></div>
+                </div>
+                <div id="user_name"><i class="fa-regular fa-user"></i>&nbsp;&nbsp;Indrajeet yaduwanshi</div>
+            </div>
+        </div>
+    </div>
+
+    <aside id="disknavbar">
+        <ul id="adminmanu">
+            <li><a href="#"><img id="profile_image" src="./profile.jpeg" alt=""></a></li>
+            <li><a href="admindeskboard.html"><i class="fa-solid fa-display"></i>&nbsp;&nbsp;<label id="manubtn">Deskboard</label></a>
+            </li>
+            <li><a href="records.html"><i class="fa-regular fa-clipboard"></i>&nbsp;&nbsp;<label id="manubtn">Records</label></a>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-rectangle-list"></i>&nbsp;&nbsp;<label id="manubtn">Insert</label></a>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-square-poll-vertical"></i>&nbsp;&nbsp;<label
+                        id="manubtn">Analytics</label></a></li>
+            <li><a href="#"><i class="fa-regular fa-address-card"></i>&nbsp;&nbsp;<label id="manubtn">About</label></a>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-wrench"></i>&nbsp;&nbsp;<label id="manubtn">Setting</label></a></li>
+            <li><a href="#"><i class="fa-solid fa-user-lock"></i>&nbsp;&nbsp;<label id="manubtn">Logout</label></a></li>
+        </ul>
+    </aside>
+    <aside id="disknavbar2">
+        <ul id="smaladminmanu">
+            <!-- <li><a href="#"><img id="profile_image" src="./profile.jpeg" alt=""></a></li> -->
+            <li><a href="#"><i class="fa-solid fa-display"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-clipboard"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-rectangle-list"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-square-poll-vertical"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-address-card"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-wrench"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-user-lock"></i></a></li>
+        </ul>
+    </aside>
+
+    <!-- ======================= admin deskboard ================================== -->
+
+    <div id="deskboard">
+        <div id="deskrecord">
+            <div id="total_student1">
+                <div id="deskrec_title">Student</div>
+                <div id="total_student">0</div>
+            </div>
+
+            <div id="total_teacher1">
+                <div id="deskrec_title">Teacher</div>
+                <div id="total_teacher">0</div>
+            </div>
+
+            <div id="total1">
+                <div id="deskrec_title">Total</div>
+                <div id="total">0</div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================== recodes section ============================================ -->
+    <div id="record_manubtn">
+        <!-- <div id="records_search"> -->
+        <select name="" id="Searchby">
+            <option value="none">select your choice</option>
+            <option value="nam">Name</option>
+            <option value="user_ID">User ID</option>
+            <option value="mobile_number">mobile Number</option>
+            <!-- <option value="student">Student</option> -->
+            <!-- <option value="teacher">Teacher</option> -->
+        </select>
+
+        <input type="text" name="search" id="search_box">
+        <button id="search_btn" onclick="finder()"><i class="fa-solid fa-magnifying-glass"></i></button><br /><br />
+        <button id="all_btn" onclick="recordsdata('all')">All</button>
+        <button id="stud_teach" onclick="recordsdata('Student')">Student</button>
+        <button id="stud_teach" onclick="recordsdata('Teacher')">Teacher</button><br /><br />
+        <!-- </div> -->
+        <div id="records"></div>
+    </div>
+    <!-- <div id="insert"></div> -->
+    <!-- <div id="analysis"></div> -->
+    <!-- <div id="about"></div> -->
+    <!-- <div id="setting"></div> -->
+
+    <script src="./admin.js"></script>
+
+</body>
+
+</html>

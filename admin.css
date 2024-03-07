@@ -1,0 +1,254 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+/* ======= navbar top =========== */
+
+#navbarmanu{
+    padding: 0px 55px;
+    width:100%;
+    height:70px;
+    background-color: rgb(20, 20, 20);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#baricon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headernav-rightside{
+    padding: 0px 20px;
+    width:60%;
+    height:70px;
+    /* background-color: rgb(20, 20, 20); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#baricon_open, #baricon_close, #page_title ,#user_name{
+    color:white;
+    text-decoration: none;
+}
+#page_title{
+font-size: 40px;
+/* margin-left:20%; */
+}
+#baricon_open{
+    font-size: 30px;
+}
+#baricon_close{
+    position:absolute;
+    left:56px;
+    font-size: 30px;
+    display: none;
+}
+#loger-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile_image1{
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    display: none;
+}
+
+/* ===================== Diskboard manubar ============= */
+#disknavbar{
+    background-color: black;
+    float:left;
+    padding:30px 30px; 
+    padding-bottom: 60px;
+    /* display: none; */
+}
+#adminmanu li a img{
+    width:80px;
+    height:80px;
+    margin-left: 25px;
+    border-radius: 50%;
+}
+#adminmanu li a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+#adminmanu li{
+    margin-bottom: 35px;
+}
+#adminmanu li a i{
+    font-size: 25px;
+}
+
+
+#smaladminmanu{
+    display: none;
+    width:80px;
+    height:580px;
+    background-color: black;
+    float:left;
+    padding:20px 20px; 
+    padding-bottom: 60px;
+}
+
+#smaladminmanu li{
+    margin-bottom: 50px;
+}
+
+#smaladminmanu li a{
+    color:white;
+    font-size: 25px;
+}
+
+/* ============================ deskboard records ====================================== */
+#deskboard{
+width: 84.48%;
+height:600px;
+float:right;
+padding-left: 15px;
+padding-top: 20px;
+}
+
+#deskrecord{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#total1, #total_teacher1, #total_student1{
+    width:250px;
+    height:130px;
+    border:4px solid rgb(147, 252, 55);
+    border-radius: 15px;
+    padding-top: 10px;
+    font-size: 30px;
+    background-color:yellowgreen;
+    color: white;
+}
+
+#total::after, #total_teacher::after, #total_student::after{
+    content:"++";
+    font-size: 20px;
+}
+
+#deskrec_title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/* ========================= records ====================== */
+#record_manubtn{
+    text-align: center;
+    margin-top: 20px;
+    /* display: none; */
+}
+
+#all_btn{
+    width:80px;
+    height:40px;
+    text-align: center;
+    border-radius: 13px;
+    margin-right: 10px;
+    background-color: rgba(53, 50, 100, 0.725);
+    color:white;
+    font-size: 20px;
+}
+#stud_teach{
+    width:100px;
+    height:40px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 30px;
+    background-color: rgba(53, 50, 100, 0.725);
+    color:white;
+    font-size: 20px;
+}
+#Searchby{
+    width:180px;
+    height:40px;
+    border-radius: 12px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+#search_box{
+    width:450px;
+    height:40px;
+    border-radius: 12px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    /* display: none; */
+}
+
+#search_btn{
+    width:50px;
+    height:38px;
+    border-radius: 10px;
+    position:relative;
+    right:56px;
+    top:2px;
+}
+#search_btn i{
+    font-size: 20px;
+}
+
+
+
+/* ================== DATA TABLE ===================== */
+#pro_img, #p_img{
+    width:120px;
+    height:80px;
+}
+#name_td{
+    width:240px;
+    height:80px;
+}
+
+#user_td{
+    width:300px;
+    height:80px; 
+}
+#number_td{
+    width:140px;
+    height:80px;
+}
+#role_td, #update_td, #delete_td{
+    width:100px;
+    height:80px;
+}
+
+#fetchdata{
+    padding-left: 15px;
+}
+
+
+
+#fetchdata tr td{
+    border:1px solid black;
+    margin-left:100px;    
+    text-align: center;
+}
+
+#fetchdata tr td button{
+    width:80px;
+    height:30px;
+    border-radius: 10px;
+}
+
+#records{
+    width:100%;
+    height: 100vh;
+}
+
+

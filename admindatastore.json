@@ -1,0 +1,72 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "Registration": [
+    {
+      "photo_url": "",
+      "names": "indrajeet",
+      "user_id": "indrajeetyadu36@gmail.com",
+      "mobile_number": "53454565465",
+      "password": "12345",
+      "confirm_password": "12345",
+      "role": "Teacher",
+      "id": 1
+    },
+    {
+      "photo_url": "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg",
+      "names": "roshan",
+      "user_id": "abc@gmail.com",
+      "mobile_number": "9986786544",
+      "password": "1234",
+      "confirm_password": "1234",
+      "role": "Student",
+      "id": 2
+    },
+    {
+      "photo_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsjv8k9FpJH5AvquxbVyd06B5UludsXYeHuTLTGllucw&s",
+      "names": "rishri mishra",
+      "user_id": "44444545645@gmail.com",
+      "mobile_number": "7768654412",
+      "password": "12345",
+      "confirm_password": "12345",
+      "role": "Teacher",
+      "id": 3
+    },
+    {
+      "photo_url": "https://statusneo.com/wp-content/uploads/2023/02/MicrosoftTeams-image551ad57e01403f080a9df51975ac40b6efba82553c323a742b42b1c71c1e45f1.jpg",
+      "names": "rohit",
+      "user_id": "rohit@gmail.com",
+      "mobile_number": "9976543458",
+      "password": "12345",
+      "confirm_password": "12345",
+      "role": "Student",
+      "id": 4
+    },
+    {
+      "photo_url": "https://statusneo.com/wp-content/uploads/2023/02/MicrosoftTeams-image551ad57e01403f080a9df51975ac40b6efba82553c323a742b42b1c71c1e45f1.jpg",
+      "names": "rohit",
+      "user_id": "rohit@gmail.com",
+      "mobile_number": "9976543458",
+      "password": "12345",
+      "confirm_password": "12345",
+      "role": "Student",
+      "id": 5
+    }
+  ],
+  "login": []
+}

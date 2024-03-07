@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        #registform {
+            border: 1px solid rgb(188, 236, 117);
+            padding: 40px 80px;
+            border-radius: 20px;
+            text-align: center;
+            background-color: rgb(36, 35, 35);
+        }
+
+        #log_title {
+            font-size: 18px;
+            letter-spacing: 1.6px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            margin-bottom: 28px;
+            text-shadow: 1.5px 1.2px 2px;
+        }
+
+
+        #phote, #fname, #username1, #number,
+        #password1, #cpassword1 {
+            width: 350px;
+            height: 40px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+            padding-right: 50px;
+            padding-left: 15px;
+            font-size: 16px;
+        }
+
+        /* #phote{
+            display: none;
+        } */
+
+
+
+        #fname_error,#username_error,#number_error,
+        #password_error, #cpassword_error {
+            /* border: 1px solid red; */
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+            background-color: white;
+            position: relative;
+            left: 91%;
+            top: -66px;
+            display: none;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #sign_btn, #role {
+            padding: 7px 20px;
+            border-radius: 15px;
+            background-color: rgb(32, 32, 90);
+            color: aliceblue;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="registform">
+        <div id="log_title">Registration</div>
+        <input type="text" name="photo" id="phote" placeholder="Please Enter Profile URL"><br>
+        <div id="fname_error"></div>
+
+        <input type="text" name="username" id="fname" placeholder="Enter Your Name"><br>
+        <div id="fname_error"></div>
+
+        <input type="email" name="username" id="username1" placeholder="Enter Your Username"><br>
+        <div id="username_error"></div>
+
+        <input type="tel" name="username" id="number" placeholder="Enter Your phone number"><br>
+        <div id="number_error"></div>
+
+        <input type="password" name="password" id="password1" placeholder="Enter Your Password"><br>
+        <div id="password_error"></div>
+
+        <input type="password" name="cpassword" id="cpassword1" placeholder="Enter Your confirm Password"><br>
+        <div id="cpassword_error"></div>
+        <select name="" id="role">
+            <option value="nothing">choose Role</option>
+            <option value="Teacher">As a Teacher</option>
+            <option value="Student">As a Student</option>
+        </select><br><br>
+        <button onclick="register()" id="sign_btn">signin</button>
+    </div>
+
+    <script src="./admin.js"></script>
+</body>
+
+</html>
